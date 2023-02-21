@@ -1,4 +1,4 @@
-# To install a driver for the chipset RTL8812AU  on kali linux, you can copy the following commands:
+# To install a driver for the chipset **RTL8812AU** on kali linux, you can copy the following commands:
 
 1) Open a terminal window on your Kali Linux machine.
 2) Update your system by running the command:
@@ -40,4 +40,4 @@ lsmod | grep 8812au
 If the output of the last command shows the 8812au module, then the driver has been successfully installed and loaded. 
 You can now use your device with the RTL8812AU chipset on Kali Linux.
 
-# To install a driver for the chipset RTL8812AU  on kali linux, you can copy the following commands:
+# To install a driver for the chipset **RTL8812BU** on kali linux, you can copy the following commands:
