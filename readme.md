@@ -5,7 +5,10 @@
 sudo apt update && sudo apt upgrade
 
 3) Install the necessary packages to build the driver by running the command:
-<sup> sudo apt install dkms git build-essential </sup>
+```
+ sudo apt install dkms git build-essential 
+ ```
+
 
 4) Clone the driver repository from GitHub by running the command:
 git clone https://github.com/aircrack-ng/rtl8812au.git
