@@ -41,3 +41,36 @@ If the output of the last command shows the 8812au module, then the driver has b
 You can now use your device with the RTL8812AU chipset on Kali Linux.
 
 # To install a driver for the chipset **RTL8812BU** on kali linux, you can copy the following commands:
+
+1) Connect your device to your computer and make sure it is detected.
+2) Open a terminal window on Kali Linux.
+3) Run the following command to update your system's package list:
+```
+sudo apt update
+```
+4) Install the necessary dependencies for building the driver by running the following command:
+```
+sudo apt install dkms git build-essential
+```
+5) Clone the driver's repository to your local machine by running the following command:
+```
+git clone https://github.com/cilynx/rtl88x2bu.git
+```
+6) Navigate to the cloned directory:
+```
+cd rtl88x2bu
+```
+7) Run the following command to build and install the driver:
+```
+sudo make && sudo make install
+```
+8) Once the installation is complete, load the driver by running the following command:
+```
+sudo modprobe 88x2bu
+```
+9) You should now be able to use your device with the installed driver.
+
+> Note: Some users may need to disable secure boot to be able to install and use the driver. If you encounter any issues during the installation, you can check the README file in the cloned directory for troubleshooting steps or seek further support from the driver's repository or forum.
+
+
+
